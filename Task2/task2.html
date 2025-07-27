@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div id="main">
+
+        <form id="myForm">
+            <h2>Registration Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Submit">
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+        </form>
+    </div>
+
+
+    <!-- Hidden Image Slider -->
+     
+    <div id="imageSlider">
+        <h2>Welcome to the Nature Gallery 🌿</h2>
+        <p>Relax and explore the beauty of our natural world through these stunning images.</p>
+
+        <div class="slider-wrapper">
+            <button class="arrow left" onclick="scrollSlider(-1)">&#8249;</button>
+
+            <div class="slider-container" id="slider">
+                <div class="slide">
+                    <img src="img1.jpg" alt="Mountain Lake">
+                    <div class="slide-content">
+                        <h4>Mountain Lake</h4>
+                        <p>Peaceful reflections of the Mountains in the lake under the blue sky.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img2.jpg" alt="Forest Lake">
+                    <div class="slide-content">
+                        <h4>Forest Mirror</h4>
+                        <p>A crystal-clear lake surrounded by dense greenery.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img3.jpg" alt="Hills of Peace">
+                    <div class="slide-content">
+                        <h4>Peace in the Peaks</h4>
+                        <p>A charming alpine village rests beneath towering snow-capped mountains.</p>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img4.jpg" alt="Green Hills">
+                    <div class="slide-content">
+                        <h4>Moments of Stillness</h4>
+                        <p>Pause, breathe, and embrace the calm on a sunlit hill beneath a wide, open sky.</p>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img6.jpg" alt="Countryside Road">
+                    <div class="slide-content">
+                        <h4>Countryside Road</h4>
+                        <p>A forest scene with sunlight filtering through the trees.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img8.jpg" alt="Autumn Forest">
+                    <div class="slide-content">
+                        <h4>Autumn Forest</h4>
+                        <p>A vibrant autumn forest with leaves in shades of red, orange, and gold.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img5.jpg" alt="Valley">
+                    <div class="slide-content">
+                        <h4>Village in the Valley</h4>
+                        <p>A charming village nestled between majestic mountains.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos/id/1043/300/200" alt="Sunset Field">
+                    <div class="slide-content">
+                        <h4>Golden Field</h4>
+                        <p>Sunset over wide open fields, glowing in gold.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="arrow right" onclick="scrollSlider(1)">&#8250;</button>
+        </div>
+        <script src="task2.js"></script>
+</body>
+
+</html>
